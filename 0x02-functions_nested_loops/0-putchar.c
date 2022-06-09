@@ -1,20 +1,20 @@
-#include "main.h"                                                                                                                      
-/**                                                                                                                                    
- *main - print out the characters                                                                                                      
- *                                                                                                                                     
- * Description: return the required results                                                                                            
- *                                                                                                                                     
- * Return: return integer value 0                                                                                                      
- *                                                                                                                                     
- */                                                                                                                                    
-int main(void)                                                                                                                         
-{                                                                                                                                      
-        int n = 0;                                                                                                                     
-        char name[8] = "_putchar";                                                                                                              while (n < 8)                                                                                                                  
-        {                                                                                                                              
-                _putchar(name[n]);                                                                                                     
-                n++;                                                                                                                   
-        }                                                                                                                              
-        _putchar('\n');                                                                                                                
-        return (0);                                                                                                                    
+#include <stdio.h>
+
+/**
+* main - prints a string "_putchar" string of characters"
+*
+* Return: 0
+*/
+
+int main(void)
+{
+	int i;
+	char myText[] = "_putchar";
+
+	for (i = 0; i < 8; i++)
+	{
+		putchar(myText[i]);
+	}
+	putchar('\n');
+	return (0);
 }
